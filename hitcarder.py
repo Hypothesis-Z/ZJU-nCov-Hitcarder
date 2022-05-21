@@ -9,7 +9,7 @@ import datetime
 import os
 import sys
 import message
-import ddddocr
+# import ddddocr
 
 
 class HitCarder(object):
