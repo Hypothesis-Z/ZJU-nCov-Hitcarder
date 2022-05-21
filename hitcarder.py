@@ -139,12 +139,14 @@ class HitCarder(object):
         new_info['sfqrxxss'] = 1 # 属实
 
         # verify code
+        '''
         res = self.sess.get(self.verify_code_url)
         with open('code.png', 'wb') as fp:
             fp.write(res.content)
         ocr = ddddocr.DdddOcr()
         captcha = ocr.classification(res.content)
         new_info['verifyCode'] = captcha
+        '''
         
         self.info = new_info
         # print(json.dumps(self.info))
